@@ -84,7 +84,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/', (req, res) => {
+app.get('/', (req, res) =>  {
     if (req.session.username) {
         return res.json({
             username: req.session.username,
